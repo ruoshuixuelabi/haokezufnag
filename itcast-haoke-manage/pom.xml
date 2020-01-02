@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <!--spring boot的支持-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.0.RELEASE</version>
     </parent>
-
     <groupId>cn.itcast.haoke.manage</groupId>
     <artifactId>itcast-haoke-manage</artifactId>
     <packaging>pom</packaging>
@@ -19,7 +17,6 @@
         <module>itcast-haoke-manage-api-server</module>
         <module>itcast-haoke-manage-dubbo-server</module>
     </modules>
-
     <dependencies>
         <!--springboot 测试支持-->
         <dependency>
@@ -29,9 +26,9 @@
         </dependency>
         <!--dubbo的springboot支持-->
         <dependency>
-            <groupId>com.alibaba.boot</groupId>
+            <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>0.2.0</version>
+            <version>2.7.4.1</version>
         </dependency>
         <!--dubbo框架-->
         <dependency>
@@ -56,6 +53,4 @@
             <version>0.1</version>
         </dependency>
     </dependencies>
-
-
 </project>
